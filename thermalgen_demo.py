@@ -92,7 +92,8 @@ if __name__ == "__main__":
         v2.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
     ])
 
-    model = ThermalGenSIT.from_pretrained("xjh19972/ThermalGen-XL-2").to(device)
+    # model = ThermalGenSIT.from_pretrained("xjh19972/ThermalGen-L-2-concat").to(device).eval()
+    model = ThermalGenSIT.from_pretrained("E:\ThermalGen\weights\ThermalGen-L-2-concat").to(device).eval()
 
     # -----------------------------
     # Inputs
